@@ -1,0 +1,28 @@
+//colors
+$brown: rgb(78,62,47);
+$dkblue: rgb(45,66,85);
+$ltbrown: rgb(245,208,173);
+$white: rgb(221,230,240);
+$yellow: rgb(136,36,4);
+//fonts
+$bad: 'Bad Script', cursive;
+$princess: 'Princess Sofia', cursive;
+$quattro: 'Quattrocento Sans', serif;
+//mixins
+@mixin h2heading {
+    color: $ltbrown;
+    font: 2.5rem/1 $princess;
+    text-shadow: 2px 2px 10px black;
+}
+@mixin bp($point) {
+     @if $point == tablet{
+        @media screen and (max-width: 960px) {
+             @content;
+        }
+    }
+    @if $point == mobile {
+         @media screen and (max-width: 750px){
+            @content;
+        }
+    }
+}

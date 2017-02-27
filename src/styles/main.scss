@@ -1,0 +1,63 @@
+@import 'partials/reset';
+@import 'partials/styling';
+@import 'partials/heading';
+@import 'partials/login';
+@import 'partials/songs';
+@import 'partials/songs-detail';
+@import 'partials/friends';
+@import 'partials/modifiers';
+
+body {
+  background: green url('../data/zoagli.jpg') center center/cover no-repeat fixed;
+  font: 16px/1.6 $quattro;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.page-wrapper {
+  @include bp(mobile) {
+    display: inherit;
+  }
+  display: flex;
+  justify-content: center;
+
+}
+
+main {
+  @include bp(tablet) {
+    width: 80%;
+  }
+  @include bp(mobile) {
+    width: 100%;
+    margin: 0;
+  }
+  align-items: center;
+  background-color: rgba($dkblue, .3);
+  border-radius: 20px;
+  box-shadow: 3px 3px 20px black;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  width: 70%;
+  & h1 {
+    color: $white;
+font: 5rem/1.5 $princess;    text-shadow: 1px 2px 10px black;
+  }
+}
+a {
+  color: $brown;
+  text-decoration: underline;
+  &:hover {
+    color: lighten($brown, 30%);
+  }
+}
+.active {
+  background-color: rgba(black, .3);
+  color: $white;
+  &:hover {
+    background-color: rgba(black, .3);
+    color: $white;
+  }
+
+}

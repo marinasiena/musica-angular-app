@@ -1,0 +1,19 @@
+API account created
+Here are the details of your new API account.
+Application name	TIY music app
+API key	f6294380fd9f6f0fd5b3ea36be271442
+Shared secret	0aad1f0892551a1f2a80e6bb0cd88fd1
+Registered to	marinasiena
+
+The API root URL is located at http://ws.audioscrobbler.com/2.0/
+
+ENDPOINTS
+GET top 10 tracks by artist
+JSON: /2.0/?method=artist.gettoptracks&artist=cher&api_key=YOUR_API_KEY&format=json
+http://www.last.fm/api/show/artist.getTopTracks
+returns:
+
+GET artist info
+JSON: /2.0/?method=artist.getinfo&artist=Cher&api_key=YOUR_API_KEY&format=json
+http://www.last.fm/api/show/artist.getInfo
+returns: name, mbid, url, imagesizesm, imagesizemd, imagesizelg, stats: listeners, stats: plays,

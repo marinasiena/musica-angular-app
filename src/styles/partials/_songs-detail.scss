@@ -1,0 +1,32 @@
+.expanded-song {
+    background-color: rgba($white, .7);
+    border-radius: 20px;
+    margin: 20px 0;
+
+    h3 {
+        @include h2heading;
+        color: $brown;
+    }
+
+    span {
+        background-color: $white;
+        display: block;
+        font: 700 1.5rem/1 $quattro;
+        width: 100%;
+
+        & p {
+            font: 400 1rem/0.7 $quattro;
+            padding-top: 25px;
+        }
+
+        & a {
+            text-decoration: none;
+        }
+    }
+
+    img {
+        border-radius: 20px;
+        height: 300px;
+        width: 300px;
+    }
+}

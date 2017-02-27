@@ -1,0 +1,26 @@
+<section class='songs-view' ui-sref-active='active'>
+
+  <h2>Welcome, {{loginCtrl.loggedUser().username}}.  Your {{songsCtrl.songCount()}} songs ...</h2>
+
+  <table>
+
+    <tr>
+      <th></th>
+      <th ng-click="songsCtrl.changeSort('artistName')">artist</th>
+      <th ng-click="songsCtrl.changeSort('listeners')">plays</th>
+      <th ng-click="songsCtrl.changeSort('songName')">song</th>
+      <th>details</th>
+    </tr>
+
+    <tr ng-repeat='song in songsCtrl.songs | orderBy:songsCtrl.sort.column:songsCtrl.sort.descending'>
+      <td><img ng-src='{{song.artistImg}}' /></td>
+      <td>
+        <h3>{{song.artistName}}</h3></td>
+      <td>{{song.listeners | number}}</td>
+      <td><a href='{{song.songUrl}}'>{{song.songName}}</a></td>
+      <td ui-sref='musicaParent.songsExpCtrl({id: song.Id})'>details</td>
+    </tr>
+
+  </table>
+
+</section>

@@ -1,0 +1,57 @@
+.songs-view {
+    h2 {
+        @include h2heading;
+        @include bp(mobile) {
+            font-size: 2rem;
+        }
+    }
+
+    & table {
+        background-color: rgba($white, .7);
+        border-radius: 20px;
+        margin: 0 auto;
+        text-align: left;
+
+        & th {
+            border-bottom: 1px solid rgba($dkblue, .2);
+            color: black;
+            font: 700 1.2rem/1 $quattro;
+            padding: 10px;
+        }
+
+        & tr {
+            margin: 10px 0;
+            padding: 5px;
+        }
+
+        & td {
+            @include bp(mobile) {
+                font-size: 0.8rem;
+            }
+            color: $dkblue;
+            padding: 5px 10px;
+            vertical-align: middle;
+
+            & h3 {
+                @include bp(mobile) {
+                    font-size: 0.9rem;
+                }
+                font: 1.5rem/1 $quattro;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    & img {
+        @include bp(mobile) {
+            height: 50px;
+            min-width: 50px;
+            width: 50px;
+        }
+        border-radius: 20px;
+        height: 75px;
+        margin-right: 20px;
+        min-width: 75px;
+        width: 75px;
+    }
+}

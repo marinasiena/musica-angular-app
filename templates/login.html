@@ -1,0 +1,10 @@
+<section class='login-view'>
+
+  <form id='login-form' type='submit' ng-submit='loginCtrl.userLogin(loginForm.username.$viewValue, loginForm.password.$viewValue)' name='loginForm' novalidate>
+    <h2>Login to Musica</h2>
+    <input ng-model='loginCtrl.login.username' name='username' type='text' placeholder='username' />
+    <input ng-model='loginCtrl.login.password' name='password' type='password' placeholder='password' />
+    <button>login</button>
+  </form>
+
+</section>

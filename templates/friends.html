@@ -1,0 +1,15 @@
+<section class='friends-view' ui-sref-active='active'>
+
+  <h2>Hiya, {{loginCtrl.loggedUser().username}}.  Your {{friendsCtrl.friendCount()}} friends ...</h2>
+
+  <div class='friends-wrapper'>
+
+    <article class='friend' ng-repeat='friend in friendsCtrl.friends'>
+      <img ng-src='{{friend.Image}}' alt='{{friend.LastName}}' />
+      <h3>{{friend.FirstName}} {{friend.LastName}}</h3>
+      <p>{{friend.Likes}} likes</p>
+    </article>
+
+  </div>
+
+</section>

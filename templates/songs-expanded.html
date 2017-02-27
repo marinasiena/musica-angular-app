@@ -1,0 +1,19 @@
+<section class='expanded-song-view' ui-sref-active='active'>
+
+  <div class='expanded-song-wrapper'>
+
+    <article class='expanded-song'>
+
+      <img ng-src={{songsExpCtrl.currSong.artistImg}} />
+      <h3>{{songsExpCtrl.currSong.artistName}}</h3>
+      <span><a href="{{songsExpCtrl.currSong.songUrl}}"><p>
+        listen on LastFM
+      </p>{{songsExpCtrl.currSong.songName}}</a>
+      </span>
+      <a href=''>Visit the {{songsExpCtrl.currSong.artistName}} page on LastFM</a>
+      <p>listeners: {{songsExpCtrl.currSong.listeners}}</p>
+    </article>
+
+  </div>
+
+</section>

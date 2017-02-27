@@ -1,0 +1,50 @@
+.friends-view {
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+
+  & h2 {
+    @include h2heading;
+    @include bp(mobile) {
+      font-size: 2rem;
+    }
+  }
+}
+.friends-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -10px;
+  z-index: -5;
+}
+.friend {
+  @include bp(mobile) {
+    min-width: 100px;
+  }
+  background-color: rgba($white, .7);
+  border-radius: 10px;
+  margin: 5px 10px;
+  min-width: 250px;
+  padding: 10px;
+  z-index: 0;
+
+    & img {
+      @include bp(mobile) {
+        height: 50px;
+        width: 50px;
+      }
+border-radius: 50%;      height: 100px;
+      width: 100px;
+    }
+    & h3 {
+      @include bp(mobile) {
+        font-size: 1rem;
+      }
+      font: 2rem/1 $princess;
+    }
+    & p {
+      font-size: 1.5rem;
+      color: $dkblue;
+
+    }
+}
