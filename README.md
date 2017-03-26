@@ -1,7 +1,7 @@
 # musica-angular-app
 Music app | Angular 1
 
-GitPages:  https://marinasiena.github.io/musica-angular-app/
+GitPages:  https://vallyre.github.io/musica-angular-app/
 
 Site is fully responsive and scales| 
 Click on song headings to sort descending/ascending by Artist, Song and Plays | 
